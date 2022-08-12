@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  width: 90vw;
+  margin: auto;
+}
+
+.nav {
+  border-bottom: 0.3rem solid #eee;
+  padding: 1.5rem;
+  h1 {
+    color: rgb(243, 67, 67);
+    font-size: 2.7rem;
+  }
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  .product {
+    border: 0.1rem solid #ccc;
+    img {
+      width: 100%;
+      border-bottom: 0.1rem solid #eee;
+    }
+    .content {
+      padding: 1rem;
+      .price,
+      .title {
+        font-size: 2rem;
+        padding: 0.7rem 0;
+      }
+      .title {
+        color: rgb(243, 67, 67);
+      }
+      .desc {
+        color: #888;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  .image {
+    width: 100%;
+    border: 0.1rem solid #eee;
+    img {
+      width: 100%;
+      height: 100%;
+      max-height: 60rem;
+      object-fit: cover;
+    }
+  }
+  .content {
+    align-self: center;
+    .title {
+      font-size: 3.5rem;
+      padding: 1rem 0;
+      color: rgb(243, 67, 67);
+    }
+    .desc {
+      font-size: 1.8rem;
+      padding: 1rem 0;
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 1.7;
+      color: #777;
+    }
+    .price {
+      padding: 1rem 0;
+      font-size: 1.5rem;
+      color: #999;
+    }
+
+    .btn {
+      border: 0;
+      background: rgb(38, 161, 199);
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+}
